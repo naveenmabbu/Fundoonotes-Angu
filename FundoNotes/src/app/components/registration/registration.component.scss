@@ -1,0 +1,113 @@
+.part {
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 80%;
+    width: 85%;
+    border: 1px solid rgba(245, 238, 238, 0.76);
+    border-radius: 10px;
+    padding: 20px;
+    .headings{
+        h1{
+            .Fundoo{
+                font-weight: normal;
+                .f{
+                    color: blue;
+                }
+                .u{
+                    color: red;
+                }
+                .n{
+                    color: rgb(209, 209, 54);
+                }
+                .d{
+                    color: blueviolet;
+                }
+                .o1{
+                    color: green;
+                }
+                .o2{
+                    color: orangered;
+                }
+            }
+        }
+        h3{
+            font-size: larger;
+        }
+    }
+    .subPart{
+        display: flex;
+        justify-content: space-between;
+       
+        .form-content{
+            display: flex;
+            flex-direction: column;
+            
+            .full-name{
+                display: flex;
+                gap: 20px;
+                .name{
+                    width: 150px; 
+                } 
+            }  
+            .password-part{
+                display: flex;
+                gap: 20px;
+                .password{
+                    width: 150px;
+                } 
+            }    
+            .email-part{
+                .email{
+                    width: 320px;
+                }
+            }
+            .message1{
+                
+                font-size: 11px;
+            }
+            .message2{
+               
+                font-size: 16px;
+            }
+           .btn{
+               display: flex;
+               justify-content: space-between;
+               margin-top: 50px;
+               a{
+                   color: rgb(77, 77, 253);
+               }
+               button{
+                   background-color: rgb(77, 77, 253);
+                   color: #fff;
+               }
+           }
+           
+        }
+        .register-image{
+            display: inline-block;
+            position: relative;
+            top: -500px;
+            left: 80%;
+            transform: translate(50%,50%);
+            
+        } 
+        .register-image{
+       
+            width: 220px;
+            display: block;
+            align-self:flex-start;
+        }
+        .image-message1{
+            position: relative;   
+            left: 30%;
+            
+        }
+        .image-message2{
+            position: relative;   
+            left: 10%;
+            
+        }
+    } 
+}
+
