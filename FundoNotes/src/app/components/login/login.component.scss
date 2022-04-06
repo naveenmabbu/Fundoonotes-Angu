@@ -1,0 +1,95 @@
+.part {
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right: 25%;
+    height: 60%;
+    width: 30%;
+    border: 1px solid rgba(245, 238, 238, 0.76);
+    border-radius: 10px;
+    border-color: rgba(161, 130, 130, 0.281);
+    padding: 20px;
+    .headings{
+        h1{
+            .Fundoo{
+                font-weight: normal;
+                .f{
+                    color: blue;
+                }
+                .u{
+                    color: red;
+                }
+                .n{
+                    color: rgb(209, 209, 54);
+                }
+                .d{
+                    color: blueviolet;
+                }
+                .o1{
+                    color: green;
+                }
+                .o2{
+                    color: orangered;
+                }
+                position: relative;   
+                left: 40%;
+            
+            }
+        }
+        h2{
+            font-size:x-large;
+            position: relative;   
+            left: 40%;
+        }
+        h3{
+            font-size: large;
+            position: relative;   
+            left: 30%;
+        }
+    }  
+    
+    .subPart{
+        display: flex;
+        justify-content: space-between;
+       
+        .form-content{
+            display: flex;
+            flex-direction: column;
+
+            .password-part{
+                display: flex;
+                gap: 20px;
+                .password{
+                    width: 370px;
+                    left: 11%;
+                    height: 60px;
+                } 
+            }    
+            .email-part{
+                .email{
+                    width: 370px;
+                    left: 11%;
+                }
+            }
+            p{
+                display: flex;
+                justify-content: space-between;
+                color: rgb(77, 77, 253);
+                padding-left: 40px;
+            }
+            .btn{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+                p{
+                    color: rgb(77, 77, 253);
+                padding-left: 40px;
+                }
+                button{
+                    background-color: rgb(77, 77, 253);
+                    color: #fff;
+                    left: 20%;
+                }
+            }
+        }
+    }
+}
