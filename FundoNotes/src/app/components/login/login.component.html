@@ -13,30 +13,35 @@
       <h2> Sign In</h2>
       <h3>Use your fundoo account</h3>
     </div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div class="subPart">
         <div class="form-content">
             <div class="email-part">
                 <mat-form-field class="email" appearance="outline">
                   <mat-label>username</mat-label>
-                  <input matInput placeholder="usernmae">
-                  
+                  <input matInput placeholder="usernmae" formControlName="email">
+                  <mat-error>enter email</mat-error>
           
                 </mat-form-field>
             </div>
             <div class="password-part">
                 <mat-form-field class="password" appearance="outline">
                   <mat-label>password</mat-label>
-                  <input matInput placeholder="password">
+                  <input matInput placeholder="password" formControlName="password">
+                  <mat-error>enter password</mat-error>
                 </mat-form-field> 
                     
             </div>
-            <p href="https://www.google.com/" target="_blank">Forgot Password?</p> 
+            <div>
+            <p routerLink="/forget" target="_blank">Forgot Password?</p> 
+          </div>
             <div class="btn">
-                <p mat-button href="https://www.google.com/" target="_blank">Create Account</p>
+                <a mat-button routerLink="/register" target="_blank">Create Account</a>
                 <button mat-raised-button >Next</button>
             </div>
         </div>
     </div>
+  </form>
 </div>        
 
 
