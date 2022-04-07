@@ -18,4 +18,13 @@ export class UserService {
     return this.httpservice.postService("https://localhost:44351/api/User/Register",data,false,header)
 
   }
+  login(data:any){
+    let header = {
+      headers:new HttpHeaders({
+        'Content-type':'application/json',
+        
+      })
+    }
+    return this.httpservice.postService("https://localhost:44351/api/User/Login",data,false,header)
+  }
 }
