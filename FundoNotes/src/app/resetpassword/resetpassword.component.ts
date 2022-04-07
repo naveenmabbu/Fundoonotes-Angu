@@ -11,12 +11,14 @@ export class ResetpasswordComponent implements OnInit {
   constructor(private fb:FormBuilder) { }
 
   ngOnInit(): void {
-    this.resetForm! = this.fb.group({
+    this.resetForm = this.fb.group({
       password: ['', [Validators.required, Validators.minLength(6)]],
       confirm: ['', [Validators.required, Validators.minLength(6)]],
     })
   }
   onSubmit() {
+    console.log();
+    
 
   }
 
