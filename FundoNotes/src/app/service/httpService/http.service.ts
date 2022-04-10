@@ -13,8 +13,8 @@ export class HttpService {
   getService(){
 
   }
-  putService(){
-
+  putService(url:string,data:any,token:boolean=false,httpoptions:any){
+    return this.http.put(url,data,token && httpoptions)
   }
   deleteService(){
 
