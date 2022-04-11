@@ -21,10 +21,14 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
-import { CreateNoteComponent } from './components/create-note/create-note.component';
 import { GetallnotesComponent } from './components/getallnotes/getallnotes.component';
 import { IconsComponent } from './components/icons/icons.component';
 import { DisplaynotesComponent } from './components/displaynotes/displaynotes.component';
+import { CreateNoteComponent } from './components/create-note/create-note.component';
+import { TakenoteComponent } from './components/takenote/takenote.component';
+import {MatCardModule} from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -38,13 +42,14 @@ import { DisplaynotesComponent } from './components/displaynotes/displaynotes.co
     CreateNoteComponent,
     GetallnotesComponent,
     IconsComponent,
-    DisplaynotesComponent
+    DisplaynotesComponent,
+    TakenoteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,MatFormFieldModule,MatInputModule,MatCheckboxModule,MatButtonModule,FlexLayoutModule,ReactiveFormsModule,
-    HttpClientModule,MatSidenavModule,MatToolbarModule,MatIconModule,MatListModule 
+    HttpClientModule,MatSidenavModule,MatToolbarModule,MatIconModule,MatListModule,MatCardModule,FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
