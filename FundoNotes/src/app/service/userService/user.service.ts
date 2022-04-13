@@ -15,17 +15,20 @@ export class UserService {
         
       })
     }
-    return this.httpservice.postService("https://localhost:44351/api/User/Register",data,false,header)
+    return this.httpservice.postService("User/Register",data,false,header)
 
   }
   login(data:any){
+    console.log("print values",data);
+    
     let header = {
+      
       headers:new HttpHeaders({
         'Content-type':'application/json',
         
       })
     }
-    return this.httpservice.postService("https://localhost:44351/api/User/Login",data,false,header)
+    return this.httpservice.postService("User/Login",data,false,header)
   }
   forgot(data:any){
     let header = {
@@ -34,16 +37,16 @@ export class UserService {
         
       })
     }
-    return this.httpservice.postService("https://localhost:44351/api/User/ForgetPassword?email="+data.email,{},false,header)
+    return this.httpservice.postService("User/ForgetPassword?email="+data.email,{},false,header)
   }
   reset(data:any){
     let header = {
       headers:new HttpHeaders({
         'Content-type':'application/json',
-        'Authorization': 'Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.e30.'
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJKYW1lc3BldGVyNjU0QGdtYWlsLmNvbSIsIklkIjoiMjciLCJleHAiOjE2NDk3ODQ5MTB9.puInuaUHZSAnOquft5M--wEDhbBNL1GjbT17LK_SETQ'
         
       })
     }
-    return this.httpservice.putService("https://localhost:44351/api/User/ResetPassword",data,true,header)
+    return this.httpservice.putService("User/ResetPassword",data,true,header)
   }
 }
