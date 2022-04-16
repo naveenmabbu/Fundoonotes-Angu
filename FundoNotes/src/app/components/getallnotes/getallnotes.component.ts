@@ -17,11 +17,22 @@ notelist:any;
     this.note.getallnotes().subscribe((res:any)=> {
       console.log(res);
       this.notelist=res;
-      
+      this.notelist = this.notelist.filter((object: any) => {
+        return object.isArchive === false && object.isTrash === false;
       
     })
+    console.log(this.notelist);
+  })
   }
   receiveEvent($event: any) {
+    this.getallnotes();
+  }
+  receiveMessagefromdisplaycard($event: any) {
+    console.log("insidegetallnotes");
+    this.getallnotes()
+  }
+  updatedData(value: any) {
+
     this.getallnotes();
   }
 

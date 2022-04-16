@@ -28,8 +28,12 @@ import { CreateNoteComponent } from './components/create-note/create-note.compon
 import { TakenoteComponent } from './components/takenote/takenote.component';
 import {MatCardModule} from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
-
-
+import { UpdatenoteComponent } from './components/updatenote/updatenote.component';
+import { ArchiveComponent } from './components/archive/archive.component';
+import { TrashComponent } from './components/trash/trash.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSelectModule} from '@angular/material/select';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -43,13 +47,17 @@ import { FormsModule } from '@angular/forms';
     GetallnotesComponent,
     IconsComponent,
     DisplaynotesComponent,
-    TakenoteComponent
+    TakenoteComponent,
+    UpdatenoteComponent,
+    ArchiveComponent,
+    TrashComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,MatFormFieldModule,MatInputModule,MatCheckboxModule,MatButtonModule,FlexLayoutModule,ReactiveFormsModule,
-    HttpClientModule,MatSidenavModule,MatToolbarModule,MatIconModule,MatListModule,MatCardModule,FormsModule 
+    HttpClientModule,MatSidenavModule,MatToolbarModule,MatIconModule,MatListModule,MatCardModule,FormsModule,MatDialogModule,
+    MatSelectModule,MatMenuModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
